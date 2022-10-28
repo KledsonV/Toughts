@@ -1,0 +1,27 @@
+<div class="auth-container">
+    <h2>Registrar</h2>
+    <form action="/register" method="post">
+    <div class="form-control">
+        <label for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Dígite o seu nome" required  oninvalid="this.setCustomValidity('Campo obrigatório!')"
+  oninput="this.setCustomValidity('')"/>
+    </div>
+    <div class="form-control">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Dígite o seu email" required  oninvalid="this.setCustomValidity('Campo obrigatório!')"
+  oninput="this.setCustomValidity('')"/>
+    </div>
+    <div class="form-control">
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" placeholder="Dígite a sua senha" required  oninvalid="this.setCustomValidity('Campo obrigatório!')"
+  oninput="this.setCustomValidity('')"/>
+    </div>
+    <div class="form-control">
+        <label for="confirmpassword">Confirme sua senha:</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirme a sua senha" required  oninvalid="this.setCustomValidity('Campo obrigatório!')"
+  oninput="this.setCustomValidity('')"/>
+    </div>
+    <input type="submit" value="Cadastrar">
+    <p>Já tem uma conta? <a href="/login">Clique aqui</a></p>
+    </form>
+</div>
